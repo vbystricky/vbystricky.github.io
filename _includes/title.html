@@ -1,16 +1,19 @@
 <div class="titlepart">
-  <div class="container">
-    <div class="site-name">
-      <h1>
-        <a href="{{ site.baseurl }}/">
-          {{ site.title }}
-        </a>
-      </h1>
-      <p class="site-description ">{{ site.description }}</p>
+    <div class="container">
+        <header class="titlemain clearfix">
+            <div class="site-info">
+                <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+                <p class="site-description ">{{ site.description }}</p>
+            </div>
+            <nav>
+                <a href="{{ site.baseurl }}/">Записи</a>
+                <!--
+                Set container max-width in style.css to 800px
+                <a href="{{ site.baseurl }}/links">Категории</a>
+                <a href="{{ site.baseurl }}/links">Архив</a>
+                -->
+                <a href="{{ site.baseurl }}/links">Ссылки</a>
+            </nav>
+        </header>
     </div>
-    <title-menu>
-        <a href="{{ site.baseurl }}/">Записи</a>
-        <a href="{{ site.baseurl }}/links">Ссылки</a>
-    </title-menu>
-  </div>
 </div>
