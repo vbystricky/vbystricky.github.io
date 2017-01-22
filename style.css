@@ -298,6 +298,21 @@ footer {
   text-align: center;
 }
 
+.categories > .category-posts {
+  padding-bottom: 2em;
+  border-bottom: 1px solid #eee;
+}
+
+.categories > .category-posts:last-child {
+  padding-bottom: 1em;
+  border-bottom: none;
+}
+
+.category-post-date {
+  padding-left: 1em;
+  font-size: 10px;
+}
+
 code {
   font-family: 'Bitstream Vera Sans Mono','Courier', monospace;
 }
