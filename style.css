@@ -64,7 +64,7 @@ html {
 
 body {
   background: #fff;
-  font: 16px/1.5 Helvetica, Arial, sans-serif;
+  font: 14px/1.5 Helvetica, Arial, sans-serif;
   color: #666;
 }
 
@@ -93,10 +93,6 @@ h1 {
   font-size: 27px;
   border-bottom: 1px solid #eee;
 }
-h1 a {
-  color: inherit;
-}
-
 h2 {
   font-size: 21px;
 }
@@ -107,9 +103,12 @@ h4 {
   font-size: 16px;
   color: #666;
 }
-
 p {
   margin: 13px 0;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: inherit;
 }
 
 a {
@@ -292,7 +291,6 @@ footer {
 }
 .post .read-more {
   text-transform: uppercase;
-  font-size: 14px;
 }
 
 .pagination {
