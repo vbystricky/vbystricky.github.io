@@ -3,7 +3,7 @@ author: Владимир Быстрицкий
 description: Компьютерное зрение, машинное обучение, нейронный сети и т.п.
 email: vbystricky@gmail.com
 baseurl: ""
-permalink: /:title/
+permalink: /:year/:month/:title.html
 version: v1.2.0
 kramdown:
   input: GFM
@@ -13,7 +13,7 @@ kramdown:
 excerpt_separator: <!--more-->
 
 paginate: 5
-paginate_path: "/blog/page:num/"
+paginate_path: "/pages/page:num/"
 
 gems:
   - jekyll-paginate
