@@ -1,9 +1,9 @@
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, tt, var,
+center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
@@ -91,7 +91,6 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 27px;
-  border-bottom: 1px solid #eee;
 }
 h2 {
   font-size: 21px;
@@ -154,14 +153,6 @@ img {
 .clearfix:after { 
      clear: both; 
 } 
-
-
-.date {
-  margin-top: 5px;
-  font-style: italic;
-  color: #666;
-  border-top: 1px solid #eee;
-}
 
 .titlepart {
   margin-bottom: 30px;
@@ -283,7 +274,6 @@ footer {
   border-left: 2px solid #666;
   padding: 0.1em 1em;
   color: #666;
-  font-size: 20px;
   font-style: italic;
 }
 .post .comments {
@@ -291,6 +281,35 @@ footer {
 }
 .post .read-more {
   text-transform: uppercase;
+}
+
+.post-title {
+  float: none;
+  display: block;
+  font-size: 80%;
+  font-style: italic;
+  margin-bottom: 0px;
+  border-bottom: 1px solid #eee;
+}
+.post-info {
+  float: none;
+  font-size: 80%;
+  font-style: italic;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+.post-date {
+  float: left;
+  margin-left: 10px
+}
+.post-category {
+  float: right;
+  margin-right: 10px
+}
+.post-category a {
+  color: inherit;
+  font-weight:  bold;
 }
 
 .pagination {
@@ -315,6 +334,13 @@ footer {
 
 code {
   font-family: 'Bitstream Vera Sans Mono','Courier', monospace;
+}
+
+.algo {
+  markdown: 1;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
 }
 
 .highlight pre, pre, .highlight .hll { background-color: #f8f8f8; border: 1px solid #ccc; padding: 6px 10px; border-radius: 3px; }
