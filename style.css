@@ -6,7 +6,6 @@ small, strike, tt, var,
 center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
@@ -49,6 +48,23 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+  display: block;
+  width: 100%;
+  overflow:auto;
+}
+table th {
+  font-weight:600
+}
+table th, table td {
+  padding:6px 13px;
+  border:1px solid #eee
+}
+table tr {
+  background-color:#fff;
+  border-top:1px solid #ddd
+}
+table tr:nth-child(2n) {
+  background-color:#f8f8f8
 }
 
 *, *:before, *:after {
