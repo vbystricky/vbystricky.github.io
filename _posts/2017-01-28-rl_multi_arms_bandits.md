@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Задача о "многоруком бандите"
+title: Задача о "многоруком бандите" (часть 1)
 date: 2017-01-28
 category: Reinforcement Learning
 tags: [ML, RL, multi-arms bandit]
