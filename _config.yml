@@ -1,6 +1,6 @@
 title: Записная книжка
 author: Владимир Быстрицкий
-description: Компьютерное зрение, машинное обучение, нейронный сети и т.п.
+description: Компьютерное зрение, машинное обучение, нейронные сети и т.п.
 email: vbystricky@gmail.com
 baseurl: ""
 permalink: /:year/:month/:title.html
