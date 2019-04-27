@@ -6,16 +6,19 @@ use_math: true
 <div class="posts">
     <!-- This loops through the paginated posts -->
     {% for post in paginator.posts %}
-        <article class="post">
-
-            <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-
-            <div class="entry">
-            {{ post.excerpt }}
-            </div>
-
-            <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Читать дальше...</a>
-        </article>
+      <article class="post">
+        <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          {% if post.draft %}
+            <span class="page-post-draft">draft</span>
+          {% else %}
+            <span class="page-post-date">{% include post_date_formatted.html %}</span>
+          {% endif %}
+        </h2>
+        <div class="entry">
+          {{ post.excerpt }}
+        </div>
+        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Читать дальше...</a>
+      </article>
     {% endfor %}
 
 
@@ -31,7 +34,7 @@ use_math: true
         {% if page == paginator.page %}
           <em>{{ page }}</em>
         {% elsif page == 1 %}
-          <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+          <a href="/">{{ page }}</a>
         {% else %}
           <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
         {% endif %}

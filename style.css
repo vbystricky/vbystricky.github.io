@@ -261,9 +261,9 @@ footer {
 }
 
 .footer-list {
-    margin: 0;
-    padding: 0;
-    list-style:none;
+  margin: 0;
+  padding: 0;
+  list-style:none;
 }
 
 .footer-list li {
@@ -319,6 +319,11 @@ footer {
   float: left;
   margin-left: 10px
 }
+.post-draft {
+  float: left;
+  color: #ff0000;
+  text-transform: uppercase;
+}
 .post-category {
   float: right;
   margin-right: 10px
@@ -344,6 +349,20 @@ footer {
 }
 
 .category-post-date {
+  padding-left: 1em;
+  font-size: 10px;
+}
+
+.page-post-draft {
+  float: right;
+  padding-left: 1em;
+  font-size: 10px;
+  color: #ff0000;
+  text-transform: uppercase;
+}
+
+.page-post-date {
+  float: right;
   padding-left: 1em;
   font-size: 10px;
 }
