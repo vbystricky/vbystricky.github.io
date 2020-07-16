@@ -12,11 +12,13 @@ kramdown:
     css_class: 'highlight'
 excerpt_separator: <!--more-->
 
+collections:
+  article_notes:
+    output: true
+    permalink: /:collection/:name
+
+plugins: [jekyll-paginate]
+
 paginate: 5
 paginate_path: "/pages/page:num/"
-
-gems:
-  - jekyll-paginate
-#  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-#  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
 

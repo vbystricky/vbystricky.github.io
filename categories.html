@@ -8,8 +8,7 @@ title: Категории
             <a name="{{ tag[0] }}"></a><h2>{{ tag[0] }}</h2>
             <ul>
             {% for page in tag[1] %}
-                <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
-                <span class="category-post-date">{% include page_date_formatted.html %} </span></li>
+                <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
             {% endfor %}
             </ul>
         </div>
