@@ -1,0 +1,12 @@
+---
+layout: default
+title: Заметки по статьям
+---
+
+<div class="posts">
+    {% for article in site.article_notes %}
+        <span class="article-cite"><a href="{{ article.link }}">{{ article.cite }}.</a></span>
+        <a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a>
+        <span class="article-date">{% include article_date_formatted.html %}</span><br>
+    {% endfor %}
+</div>

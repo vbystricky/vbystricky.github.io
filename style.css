@@ -367,6 +367,17 @@ footer {
   font-size: 10px;
 }
 
+.article-cite a {
+  color: #808080;
+  font-size: 13px;
+  padding-right: 1em;
+}
+
+.article-date {
+  color: #808080;
+  font-size: 10px;
+}
+
 code {
   font-family: 'Bitstream Vera Sans Mono','Courier', monospace;
 }

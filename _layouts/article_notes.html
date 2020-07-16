@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<div class="post">
+  <div class="post-title"> <h1>{{ page.title }}</h1></div>
+  <div class="post-info clearfix">
+    <div class="post-date">Дата: <b>{% include page_date_formatted.html %}</b>.</div>
+    <div class="post-category"><a href="{{ page.link }}">{{ page.cite }}</a></div>
+  </div>
+  <div class="entry">
+    {{ content }}
+  </div>
+</div>
