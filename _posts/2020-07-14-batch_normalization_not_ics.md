@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Batch Normalization. Internal Covariate Shift не при чем.
-date: 2020-07-14
-published: true
+date: 2120-07-14
+published: false
 category: Computer vision
 tags: [CNN, batch normalization, BN]
 use_math: true
