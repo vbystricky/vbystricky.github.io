@@ -368,13 +368,16 @@ footer {
 }
 
 .article-cite a {
+  float: left;
+  width: 20%;
   color: #808080;
   font-size: 13px;
-  padding-right: 1em;
 }
 
 .article-date {
+  float: right;
   color: #808080;
+  padding-top: 0.2em;
   font-size: 10px;
 }
 
