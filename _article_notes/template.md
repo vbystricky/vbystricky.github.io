@@ -11,5 +11,5 @@ published: False
 
 [{{ page.cite }}]({{ page.link }})
 
-<!--part_end-->
+<!--more-->
 
