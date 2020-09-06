@@ -367,18 +367,42 @@ footer {
   font-size: 10px;
 }
 
-.article-cite a {
+.article-item {
+  white-space: nowrap;
+  overflow: hidden;
+  margin-bottom: 3px;
+}
+
+.article-cite {
   float: left;
-  width: 20%;
+  width: 125px;
+  margin-right: 3px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.article-cite a {
   color: #808080;
   font-size: 13px;
 }
 
+.article-links {
+  display: block;
+  margin-right: 3px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 .article-date {
+  width: 90px;
   float: right;
+  text-align: right;
   color: #808080;
   padding-top: 0.2em;
   font-size: 10px;
+  white-space:nowrap;
 }
 
 code {
