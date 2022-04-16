@@ -3,6 +3,7 @@ author: Владимир Быстрицкий
 description: Компьютерное зрение, машинное обучение, нейронные сети и т.п.
 email: vbystricky@gmail.com
 baseurl: ""
+canonical: http://vbystricky.ru
 permalink: /:year/:month/:title.html
 version: v1.2.0
 kramdown:

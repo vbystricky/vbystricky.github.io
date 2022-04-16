@@ -2,22 +2,32 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
-      <!-- Enable responsiveness on mobile devices-->
+  <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
   <title>
       {{ page.title }}
   </title>
-      <!-- {{ page.title }} &middot; {{ site.title }} -->
+  <!-- {{ page.title }} &middot; {{ site.title }} -->
+
+  <link rel="canonical" href="{{ site.canonical }}{{ page.url }}" />
 
   <!-- CSS -->
-  <link rel="stylesheet" href="{{ site.baseurl }}/style.css">
+  <link rel="stylesheet" href="/style.css">
 
   <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.url }}{{ site.baseurl }}/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
   {% if page.use_math %}
     {% include mathjax_support.html %}
   {% endif %}
 
   {% include analytics.html %}
+
+  <script>
+      var host = window.location.hostname;
+      if (host != "localhost" && host != "127.0.0.1" && host != "vbystricky.ru" && host.indexOf("192.168.1.") !== 0) {
+        window.location.replace("{{ site.canonical }}{{ page.url }}");
+      }
+  </script>
+
 </head>
