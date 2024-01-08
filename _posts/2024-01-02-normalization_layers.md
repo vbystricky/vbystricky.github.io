@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Нормализация в нейронных сетях.
-date: 2024-01-08
+date: 2024-01-02
 category: Neural network
 tags: [neural network, normalization]
 use_math: true
